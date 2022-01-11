@@ -20,9 +20,10 @@ const makePredictions = seriesData => {
 
   // Return to initial data structure
   const result = mapToObjectArray(updatedGroupedData, 'seriesid', 'date');
+  console.log('result: ', result);
 
   // Convert data to CSV or JSON format:
-  JSON.stringify(result);
+  return JSON.stringify(result);
 }
 
 const main = () => {
